@@ -30,15 +30,16 @@
               </div>
               <div class="form-group mb-3">
                 <div class="custom-control custom-checkbox">
-                  <input id="remember-me" class="custom-control-input"  name="remember_me" type="checkbox">
-                  <label for="remember-me"  class="custom-control-label" > Remember me</label>
+                  <input id="remember_me" class="custom-control-input"  name="remember_me" type="checkbox">
+                  <label for="remember_me"  class="custom-control-label" > Remember me</label>
                 </div>
               </div>
               <div class="form-group mb-3">
-                <button type="submit" name="login_continue"  id="login_continue" class="btn btn-primary">Continue</button>
+                <button onclick="alert('Email: ' + $('#login_email').val() + ', PW: ' + $('#login_password').val() + ', Remember: ' + $('#remember_me').prop('checked'));"
+                        type="submit" name="login_continue"  id="login_continue" class="btn btn-primary">Continue</button>
               </div>
               <div class="forgot">
-                <a href="reset.html">Forgot password?</a>
+                <a href="">Forgot password?</a>
               </div>
             </form>
           </div>

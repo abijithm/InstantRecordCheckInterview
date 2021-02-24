@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../shared/css/main.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../shared/img/logo.png">
     <title>Instant Record Check</title>
 
     <style>
@@ -118,7 +116,7 @@
   </head>
   <body style="height: 100%; margin: 0px;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="app" style="height: 100%;  margin: 0px; display: flex; flex-direction: column;">
+    <div id="root" style="height: 100%;  margin: 0px; display: flex; flex-direction: column;">
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%">
         <div class="loader">
           <svg class="circular" viewBox="25 25 50 50">
@@ -128,7 +126,5 @@
         <h4>Loading...</h4>
       </div>
     </div>
-    <script src="../shared/js/main.js" type="text/javascript"></script>
-    <script>window.onload= function() { app.core.main(); }</script>
   </body>
 </html>
