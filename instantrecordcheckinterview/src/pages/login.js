@@ -1,9 +1,11 @@
 import React from 'react';
-// import '../scss/stylesheets/login_continue';
-// import '../scss/stylesheets/login_continue';
+import logo from "../admin-logo.png"
+
+// import '../scss/stylesheets/main.scss';
+// import "../scss/main.scss"
+// import '../scss/stylesh_eets/login_continue';
 // import '../scss/stylesheets/login_email';
 // import '../scss/stylesheets/login_password';
-
 
 export default function Login() {
 
@@ -22,7 +24,7 @@ export default function Login() {
                     <div className="login-form">
                         <div className={"page-header mb-4"} id="banner">
                             <div className="text-center">
-                                <a href="#"><img src="../shared/img/LOGO.png"></img></a>
+                                <a href="#"><img src={logo}></img></a>
                             </div>
                         </div>
                         <div className="main-div">

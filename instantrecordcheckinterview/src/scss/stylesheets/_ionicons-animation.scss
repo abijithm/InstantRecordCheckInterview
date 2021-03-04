@@ -1,7 +1,7 @@
 // Animation Icons
 // --------------------------
 
-.#{$ionicons-prefix}spin {
+.ion-spin {
   -webkit-animation: spin 1s infinite linear;
   -moz-animation: spin 1s infinite linear;
   -o-animation: spin 1s infinite linear;
@@ -48,7 +48,7 @@
 }
 
 .#{$ionicons-prefix}loading-a:before {
-  @extend .#{$ionicons-prefix}load-a:before;
+  @extend .ion-load-a:before;
 }
 
 .#{$ionicons-prefix}loading-b:before {

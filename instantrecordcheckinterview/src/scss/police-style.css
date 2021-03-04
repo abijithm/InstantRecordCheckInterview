@@ -1,0 +1,20 @@
+/* Error: compound selectors may no longer be extended.
+ * Consider `@extend .ion-load-a, :before` instead.
+ * See http://bit.ly/ExtendCompound for details.
+ * 
+ *    ,
+ * 51 |   @extend .#{$ionicons-prefix}load-a:before;
+ *    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   src/scss/stylesheets/_ionicons-animation.scss 51:11  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: compound selectors may no longer be extended.\a Consider `@extend .ion-load-a, :before` instead.\aSee http://bit.ly/ExtendCompound for details.\a\a    \2577 \a 51 \2502    @extend .#{$ionicons-prefix}load-a:before;\a    \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/scss/stylesheets/_ionicons-animation.scss 51:11  root stylesheet";
+}
